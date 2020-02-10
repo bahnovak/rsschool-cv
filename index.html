@@ -42,6 +42,35 @@
 
             <h3>English Level</h3>
             <p>A2</p>
+            
+            <h3>Code examples</h3>
+            <code>
+               <pre>
+class Options {
+    constructor(height, width, bg, fontSize, textAlign){
+        
+        this.height = height;
+        this.width = width;
+        this.bg = bg;
+        this.fontSize = fontSize;
+        this.textAlign = textAlign;
+    }
+    
+    newDiv (text){
+        
+        let div = document.createElement('div');
+        document.body.append(div);
+        
+        div.textContent = text;
+        div.style.height = this.height + 'px';
+        div.style.width = this.width + 'px';
+        div.style.background = this.bg;
+        div.style.fontSize = this.fontSize + 'px';
+        div.style.textAlign = this.textAlign;
+    }
+}
+                </pre>
+            </code>
 
 
         </div>
