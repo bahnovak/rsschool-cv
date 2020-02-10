@@ -1,10 +1,40 @@
-
-
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 
 body{
     background-color: rgba(194, 194, 194, 0.6);
-    
+    opacity: 0%;
 }
+
+
+.opa{
+    opacity: 100%;
+    transition: opacity 2s ease-in-out 0s;
+}
+
 
 img{
     width:100%;
@@ -12,27 +42,80 @@ img{
 }
 
 .contain{
-    width: 1024px;
-    margin: 20px auto;
+    max-width: 1024px;
+    margin:0 auto;
     display: flex;
     flex-wrap: nowrap;
     color: rgb(220, 220, rgb(73, 73, 73));
     font-family: 'Cambay', sans-serif;
     font-size: 17px;
-    justify-content: space-between;
+    padding-bottom: 40px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.80);
+    box-sizing: border-box;
 
 }
 
 .img{
-    flex-basis: 33%;
-    align-self: baseline;
+    flex-basis: 38%;
+    align-self: flex-start;
+    margin-top: -500px;
+    margin-right: 50px;
+    display: flex;
 
 }
 
 .cv{
-    flex-basis: 55%;
+    margin-top: -800px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1 ;
 }
 
-.ol {
-    margin-left: -30px;
+.img_opa{
+    margin-top: 0;
+    transition: margin-top 2s ease-in-out 0s;
+}
+.cv_opa{
+    margin-top: 0;
+    transition: margin-top 2s ease-in-out 0s;
+}
+
+.contain_opa{
+    background-color: rgba(109, 109, 109, 0.6);
+    transition: background-color 2s ease-in-out 0s;
+
+}
+.cv ol {
+    list-style-type : circle;
+    display: list-item;
+    margin-left: 40px;
+}
+
+h2{
+    margin-top: 20px;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.cv h3{
+    margin-top: 20px;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+@media screen and (max-width : 800px ){
+    .contain{
+        flex-wrap: wrap-reverse;
+    }
+
+    .img{
+        flex-basis: 100%;
+        margin: 0 auto;
+    }
+
+    .cv{
+        flex-basis: 100%;
+        margin-left: 10px;   
+    }
+
 }

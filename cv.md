@@ -11,7 +11,7 @@
 
 ### Summary
 
-I learn html, css, javascript. I attended the CS50 course. Lack of experience compensates for a huge desire to learn .
+I learn html, css, javascript. I attended the CS50 course. Lack of experience offset by a huge desire to learn .
 
 ### Skills
 
