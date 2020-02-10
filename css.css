@@ -41,7 +41,6 @@ img{
     color: rgb(220, 220, rgb(73, 73, 73));
     font-family: 'Cambay', sans-serif;
     font-size: 17px;
-    justify-content: space-between;
 
 }
 
@@ -49,12 +48,13 @@ img{
     flex-basis: 33%;
     align-self: baseline;
     margin-top: -500px;
+    margin-right: 30px;
 
 }
 
 .cv{
     margin-top: -800px;
-    flex-basis: 55%;
+    flex-grow : 1;
 }
 
 .img_opa{
