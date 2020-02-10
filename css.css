@@ -3,8 +3,15 @@
 
 body{
     background-color: rgba(194, 194, 194, 0.6);
-    
+    opacity: 0%;
 }
+
+
+.opa{
+    opacity: 100%;
+    transition: opacity 2s ease-in-out 0s;
+}
+
 
 img{
     width:100%;
@@ -26,11 +33,22 @@ img{
 .img{
     flex-basis: 33%;
     align-self: baseline;
+    margin-top: -500px;
 
 }
 
 .cv{
+    margin-top: -800px;
     flex-basis: 55%;
+}
+
+.img_opa{
+    margin-top: 0;
+    transition: margin-top 2s ease-in-out 0s;
+}
+.cv_opa{
+    margin-top: 0;
+    transition: margin-top 2s ease-in-out 0s;
 }
 
 .ol {
