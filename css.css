@@ -50,7 +50,7 @@ img{
     font-family: 'Cambay', sans-serif;
     font-size: 17px;
     padding-bottom: 40px;
-    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.80), inset 0 0 3px 3px rgba(0, 0, 0, 0.80);
+    box-shadow: 0 0 3px 3px rgba(82, 82, 82, 0.8), inset 0 0 3px 3px rgba(85, 85, 85, 0.8);
     box-sizing: border-box;
     border-radius: 5px;
     background-color: rgba(81, 253, 224, 0.274);
