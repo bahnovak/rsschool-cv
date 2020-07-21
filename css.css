@@ -25,7 +25,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body{
-    background-color: rgba(194, 194, 194, 0.6);
+    background-color: rgba(241, 241, 241, 0.6);
     opacity: 0%;
 }
 
@@ -37,47 +37,40 @@ body{
 
 
 img{
-    width:100%;
+    width:300px;
     height:100%;
 }
 
 .contain{
     max-width: 1024px;
-    margin:0 auto;
+    margin: 5px auto;
     display: flex;
     flex-wrap: nowrap;
     color: rgb(220, 220, rgb(73, 73, 73));
     font-family: 'Cambay', sans-serif;
     font-size: 17px;
     padding-bottom: 40px;
-    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.80);
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.80), inset 0 0 3px 3px rgba(0, 0, 0, 0.80);
     box-sizing: border-box;
+    border-radius: 5px;
+    background-color: rgba(81, 253, 224, 0.274);
 
 }
 
 .img{
     flex-basis: 38%;
     align-self: flex-start;
-    margin-top: -500px;
     margin-right: 50px;
+    margin-left: 20px;
+    margin-top: 20px;
     display: flex;
 
 }
 
 .cv{
-    margin-top: -800px;
     display: flex;
     flex-direction: column;
     flex-grow: 1 ;
-}
-
-.img_opa{
-    margin-top: 0;
-    transition: margin-top 2s ease-in-out 0s;
-}
-.cv_opa{
-    margin-top: 0;
-    transition: margin-top 2s ease-in-out 0s;
 }
 
 .contain_opa{
@@ -102,6 +95,19 @@ h2{
     font-size: 23px;
     font-weight: bold;
 }
+
+a {
+    transition: 0.5s;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    margin-left: 5px;
+    text-shadow: rgb(255, 63, 63) 0 0 5px;
+}
+
+
 
 @media screen and (max-width : 800px ){
     .contain{
